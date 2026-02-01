@@ -1,0 +1,199 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Пастельная женственная цветовая схема */
+:root {
+  --background: 0 0% 100%;
+  --foreground: 340 10% 20%;
+  
+  --card: 0 0% 100%;
+  --card-foreground: 340 10% 20%;
+  
+  --popover: 0 0% 100%;
+  --popover-foreground: 340 10% 20%;
+  
+  --primary: 340 60% 65%;
+  --primary-foreground: 0 0% 100%;
+  
+  --secondary: 270 40% 85%;
+  --secondary-foreground: 340 10% 20%;
+  
+  --muted: 340 20% 96%;
+  --muted-foreground: 340 10% 45%;
+  
+  --accent: 340 50% 90%;
+  --accent-foreground: 340 60% 40%;
+  
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 100%;
+  
+  --border: 340 20% 90%;
+  --input: 340 20% 90%;
+  --ring: 340 60% 65%;
+  
+  --radius: 0.75rem;
+
+  /* Кастомные цвета */
+  --pastel-pink: 340 60% 85%;
+  --pastel-lavender: 270 40% 85%;
+  --pastel-cream: 40 40% 95%;
+  --pastel-rose: 350 50% 75%;
+  --gold: 45 80% 55%;
+}
+
+/* Скрытие ошибок гидратации */
+[data-hydration-error] { display: none !important; }
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-[hsl(var(--primary))] text-white font-semibold py-3 px-6 rounded-xl
+           shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300
+           active:scale-95;
+  }
+  
+  .btn-secondary {
+    @apply bg-[hsl(var(--secondary))] text-[hsl(var(--foreground))] font-semibold py-3 px-6 rounded-xl
+           shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300
+           active:scale-95;
+  }
+  
+  .card-pastel {
+    @apply bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300;
+  }
+  
+  .section-padding {
+    @apply py-16 md:py-24 px-4;
+  }
+  
+  .container-main {
+    @apply max-w-6xl mx-auto px-4;
+  }
+  
+  .gradient-pink {
+    background: linear-gradient(135deg, hsl(340, 60%, 92%) 0%, hsl(270, 40%, 92%) 100%);
+  }
+  
+  .gradient-lavender {
+    background: linear-gradient(135deg, hsl(270, 40%, 92%) 0%, hsl(340, 60%, 92%) 100%);
+  }
+  
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-[hsl(340,60%,55%)] to-[hsl(270,50%,55%)];
+  }
+}
+
+/* Анимации */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse-soft {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slide-in-right {
+  from { opacity: 0; transform: translateX(100px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-pulse-soft {
+  animation: pulse-soft 2s ease-in-out infinite;
+}
+
+.animate-slide-up {
+  animation: slide-up 0.5s ease-out forwards;
+}
+
+.animate-slide-in-right {
+  animation: slide-in-right 0.4s ease-out forwards;
+}
+
+/* Слайдер до/после */
+.before-after-slider {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.before-after-slider input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: ew-resize;
+  background: transparent;
+  z-index: 10;
+}
+
+.before-after-slider input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 4px;
+  height: 9999px;
+  background: white;
+  cursor: ew-resize;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.before-after-slider input[type="range"]::-moz-range-thumb {
+  width: 4px;
+  height: 9999px;
+  background: white;
+  cursor: ew-resize;
+  border: none;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+/* Кастомный скроллбар */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(340, 20%, 96%);
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(340, 40%, 80%);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(340, 50%, 70%);
+}
+
+/* Превью размеров холста */
+.canvas-preview {
+  border: 2px solid hsl(340, 40%, 80%);
+  background: linear-gradient(135deg, hsl(40, 40%, 97%) 0%, hsl(40, 30%, 95%) 100%);
+  box-shadow: inset 0 0 20px rgba(0,0,0,0.05);
+}
