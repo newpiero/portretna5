@@ -1,0 +1,28 @@
+ПОРТРЕТ НА 5 - ИЗОБРАЖЕНИЯ ДЛЯ ЛЕНДИНГА
+========================================
+
+1. HERO ИЗОБРАЖЕНИЕ (16:9):
+   hero.png - https://cdn.abacus.ai/images/f96bc23f-1a9b-4ea2-93d6-a5875c028080.png
+
+2. ПРИМЕРЫ ГОТОВЫХ ПОРТРЕТОВ (3:4):
+   portrait_female.png - https://cdn.abacus.ai/images/584b137f-6e26-4fbf-b01a-40fef6557c98.png
+   portrait_male.png - https://cdn.abacus.ai/images/7768bded-a6c2-42af-b21e-d2fd94f0e9d2.png
+   portrait_couple.png - https://cdn.abacus.ai/images/4c04f4dd-486d-4998-b2ef-025edfc6f522.png
+   portrait_child.png - https://cdn.abacus.ai/images/10390863-05db-47e1-8db2-12920e27903b.png
+   portrait_pet.png - https://cdn.abacus.ai/images/6f6d3935-caa2-4cd1-8cb1-5b2ce22355e7.png
+   portrait_group.png - https://cdn.abacus.ai/images/82b1a0a8-2e62-4bdc-a8c2-bd16f167ac65.png
+
+3. ПАРЫ "ДО/ПОСЛЕ" ДЛЯ СЛАЙДЕРА (3:4):
+   Пара 1:
+   before_girl.png - https://cdn.abacus.ai/images/504c197b-4fb4-4ba3-b7a6-c309177e9640.png
+   after_girl.png - https://cdn.abacus.ai/images/a1762a86-e143-4b06-9ed3-fc98b3c966e5.png
+   
+   Пара 2:
+   before_family.png - https://cdn.abacus.ai/images/42d9ad68-b9ce-481b-8659-a994b4b21fd4.png
+   after_family.png - https://cdn.abacus.ai/images/b1848015-424e-4520-9a98-25cb6223bce8.png
+
+4. ФОНОВЫЕ ДЕКОРАТИВНЫЕ ЭЛЕМЕНТЫ (1:1):
+   decor_palette.png - https://cdn.abacus.ai/images/534ccfa0-634e-4b02-8216-c65233e4242e.png
+   decor_easel.png - https://cdn.abacus.ai/images/ffb9396f-0518-46d5-a1b6-b73694495ce6.png
+
+ВСЕГО: 13 изображений
